@@ -41,13 +41,13 @@
 </div>
 
 <main class="p-8">
-  <div data-aos="fade-up" data-aos-duration="1000">
+  <div >
     <router-view />
   </div>
 </main>
   
 <footer class="bg-slate-900 text-white border-t border-slate-800">
-    <div data-aos="zoom-in" data-aos-duration="800">
+    <div >
       <section class="py-16 px-4 relative overflow-hidden">
         <div class="max-w-4xl mx-auto text-center relative z-10">
           <h2 class="text-2xl md:text-4xl font-bold mb-4">Une envie soudaine ?</h2>
@@ -97,14 +97,4 @@
     </footer>
 </template>
 <script setup>
-import { onMounted } from 'vue';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-onMounted(() => {
-  AOS.init({
-    once: false, // Permet de rejouer l'animation si on remonte/redescend
-    mirror: true,
-  });
-});
 </script>
